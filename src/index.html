@@ -88,5 +88,68 @@
       <button class="btn btn_with-css-icon"><span class="btn__text">Css</span></button>
       <small>Смена иконки</small>
     </div>
+    <div class="group">
+      <button class="btn btn_checkbox">
+        <svg
+          class="btn__svg-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#000"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <g id="square">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          </g>
+          <g id="check-square" class="hidden">
+            <polyline points="9 11 12 14 22 4"></polyline>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+          </g>
+        </svg>
+      </button>
+
+      <small>SVG-стеки</small>
+    </div>
+    <div class="group">
+      <div>
+        <svg width="74" height="24">
+          <defs>
+            <symbol id="icon-alert-circle" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12" y2="16"></line>
+            </symbol>
+            <symbol id="icon-alert-octagon" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12" y2="16"></line>
+            </symbol>
+            <symbol id="icon-alert-trangle" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+              <line x1="12" y1="9" x2="12" y2="13"></line>
+              <line x1="12" y1="17" x2="12" y2="17"></line>
+            </symbol>
+            <symbol id="icon-help" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12" y2="17"></line>
+            </symbol>
+            <symbol id="icon-info" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="8"></line>
+            </symbol>
+          </defs>
+          <use xlink:href="#icon-alert-circle" x="0" y="0" stroke="red" />
+          <use xlink:href="#icon-info" x="25" y="0" stroke="green" />
+          <use xlink:href="#icon-help" x="50" y="0" stroke="orange" />
+        </svg>
+      </div>
+      <small>SVG: группировка и переиспользование элементов</small>
+    </div>
   </body>
 </html>
