@@ -1,0 +1,92 @@
+$bg-color: #1293dd;
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.group {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  align-items: center;
+  background-color: $bg-color;
+  border-color: $bg-color;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 40px;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  outline: none;
+  padding: 0.375rem 0.75rem;
+  transition: color 0.1s, background-color 0.1s, border-color 0.1s, box-shadow 0.1s;
+  user-select: none;
+
+  &:active {
+    color: #fff;
+    background-color: darken($bg-color, 10);
+    border-color: darken($bg-color, 10);
+  }
+
+  &:hover {
+    color: #131416;
+    background-color: lighten(complement($bg-color), 10);
+    border-color: lighten(complement($bg-color), 10);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem darken($bg-color, 10);
+  }
+
+  &__text {
+    display: inline-block;
+    margin: 0 0.75rem;
+  }
+
+  &__svg-icon {
+    transition: stroke 0.1s;
+  }
+
+  &_menu {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    margin: 0;
+
+    &:focus,
+    &:active,
+    &:hover {
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  &_with-css-icon {
+    background-position: 12px 6px;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    transition: background-image 0.2s;
+    background-image: url('../assets/icons/loader.svg');
+
+    &:hover {
+      background-image: url('../assets/icons/maximize.svg');
+    }
+  }
+
+  &:hover & {
+    &__svg-icon {
+      stroke: #131416;
+    }
+  }
+}

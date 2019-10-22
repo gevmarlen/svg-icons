@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Icons SVG</title>
+  </head>
+  <body>
+    <div class="group">
+      <button class="btn btn_menu">
+        <svg
+          class="btn__svg-icon btn__svg-icon_inline"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#000000"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" y1="6" x2="21" y2="6">
+            <animate fill="freeze" dur="0.1s" to="6" from="3" attributeName="x1" begin="rect.mouseover" />
+            <animate fill="freeze" dur="0.1s" to="18" from="6" attributeName="y2" begin="rect.mouseover" />
+            <animate fill="freeze" dur="0.1s" to="18" from="21" attributeName="x2" begin="rect.mouseover" />
+
+            <animate fill="freeze" dur="0.1s" to="3" from="6" attributeName="x1" begin="rect.mouseout" />
+            <animate fill="freeze" dur="0.1s" to="21" from="18" attributeName="x2" begin="rect.mouseout" />
+            <animate fill="freeze" dur="0.1s" to="6" from="18" attributeName="y2" begin="rect.mouseout" />
+          </line>
+          <line x1="3" y1="12" x2="21" y2="12">
+            <animate fill="freeze" dur="0.1s" to="6" from="3" attributeName="x1" begin="rect.mouseover" />
+            <animate fill="freeze" dur="0.1s" to="18" from="21" attributeName="x2" begin="rect.mouseover" />
+            <animate fill="freeze" dur="0.1s" to="0" from="1" attributeName="opacity" begin="rect.mouseover" />
+
+            <animate fill="freeze" dur="0.1s" to="3" from="6" attributeName="x1" begin="rect.mouseout" />
+            <animate fill="freeze" dur="0.1s" to="21" from="18" attributeName="x2" begin="rect.mouseout" />
+            <animate fill="freeze" dur="0.1s" to="1" from="0" attributeName="opacity" begin="rect.mouseout" />
+          </line>
+          <line x1="3" y1="18" x2="21" y2="18">
+            <animate fill="freeze" dur="0.1s" to="6" from="3" attributeName="x1" begin="rect.mouseover" />
+            <animate fill="freeze" dur="0.1s" to="18" from="21" attributeName="x2" begin="rect.mouseover" />
+            <animate fill="freeze" dur="0.1s" to="6" from="18" attributeName="y2" begin="rect.mouseover" />
+
+            <animate fill="freeze" dur="0.1s" to="3" from="6" attributeName="x1" begin="rect.mouseout" />
+            <animate fill="freeze" dur="0.1s" to="21" from="18" attributeName="x2" begin="rect.mouseout" />
+            <animate fill="freeze" dur="0.1s" to="18" from="6" attributeName="y2" begin="rect.mouseout" />
+          </line>
+          <rect id="rect" x="0" y="0" width="100%" height="100%" fill="transparent" stroke="none"></rect>
+        </svg>
+      </button>
+      <small>Интерактивная SVG-анимация</small>
+    </div>
+    <div class="group">
+      <button class="btn">
+        <svg
+          class="btn__svg-icon btn__svg-icon_inline"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#ffffff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+        <span class="btn__text">Inline</span>
+      </button>
+      <small>CSS-манипуляции</small>
+    </div>
+    <div class="group">
+      <button class="btn">
+        <object class="btn__svg-icon btn__svg-icon_object" type="image/svg+xml" data="<%=require('./assets/icons/db.svg')%>">Your browser does not support SVGs</object
+        ><span class="btn__text">Object</span>
+      </button>
+      <small>JS-манипуляции</small>
+    </div>
+    <div class="group">
+      <button class="btn"><img class="btn__svg-icon btn__svg-icon_img" src="<%=require('./assets/icons/img.svg')%>" alt="settings" /> <span class="btn__text">Img</span></button>
+      <small>SVG-анимация</small>
+    </div>
+    <div class="group">
+      <button class="btn btn_with-css-icon"><span class="btn__text">Css</span></button>
+      <small>Смена иконки</small>
+    </div>
+  </body>
+</html>
