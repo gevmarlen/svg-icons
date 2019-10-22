@@ -1,8 +1,27 @@
 $bg-color: #1293dd;
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+:target {
+  display: block;
+}
+
+a {
+  font-size: 0.8rem;
+  display: inline-block;
 }
 
 .group {
@@ -29,6 +48,7 @@ body {
   padding: 0.375rem 0.75rem;
   transition: color 0.1s, background-color 0.1s, border-color 0.1s, box-shadow 0.1s;
   user-select: none;
+  text-decoration: none;
 
   &:active {
     color: #fff;
@@ -55,7 +75,8 @@ body {
     transition: stroke 0.1s;
   }
 
-  &_menu {
+  &_menu,
+  &_checkbox {
     border: none;
     background: none;
     cursor: pointer;
