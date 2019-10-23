@@ -65,6 +65,7 @@ a {
 
   &__svg-icon {
     transition: stroke 0.1s;
+    stroke: #fff;
   }
 
   &_menu,
@@ -82,6 +83,13 @@ a {
       background: none;
       border: none;
       box-shadow: none;
+    }
+  }
+
+  &_menu &,
+  &_checkbox & {
+    &__svg-icon {
+      stroke: #131416;
     }
   }
 
